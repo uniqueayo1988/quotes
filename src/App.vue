@@ -1,13 +1,15 @@
 <template>
   <div id="app" class="container">
-    <p>Set up repo</p>
+    <QuoteGrid :quotes="quotes"></QuoteGrid>
   </div>
 </template>
 
 <script>
+import QuoteGrid from './components/QuoteGrid'
 
 export default {
   components: {
+    QuoteGrid
   },
   data () {
     return {
