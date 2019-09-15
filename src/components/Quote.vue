@@ -1,6 +1,5 @@
 <template>
-  <div id="app" class="container">
-    <p>Set up repo</p>
+  <div>
   </div>
 </template>
 
@@ -11,8 +10,6 @@ export default {
   },
   data () {
     return {
-      quotes: ['Just a Quote to see something'],
-      maxQuotes: 10
     }
   }
 }
