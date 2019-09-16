@@ -1,7 +1,7 @@
 <template>
   <!-- eslint-disable -->
   <div class="row">
-    <Quote v-for="(quote, i) in quotes" key="i">
+    <Quote v-for="(quote, i) in quotes" :key="i">
       {{quote}}
     </Quote>
   </div>
