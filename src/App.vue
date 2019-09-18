@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="container">
     <NewQuote @quoteAdded="emitQuote"></NewQuote>
-    <QuoteGrid :quotes="quotes"></QuoteGrid>
+    <QuoteGrid :quotes="quotes" @quoteDeleted="deleteQuote"></QuoteGrid>
     <div class="row">
       <div class="col-sm-12 text-center">
         <div class="alert alert-info" style="margin: 10px 0;">
@@ -30,6 +30,9 @@ export default {
   methods: {
     emitQuote (data) {
       this.quotes.push(data)
+    },
+    deleteQuote (index) {
+      this.quotes.splice(index, 1)
     }
   }
 }
